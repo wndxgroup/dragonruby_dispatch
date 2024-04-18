@@ -17,6 +17,8 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
+exclude:
+  - terrys-issue-archive
 #Others
 markdown: kramdown
 theme: jekyll-theme-cayman
