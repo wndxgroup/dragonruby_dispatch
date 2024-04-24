@@ -21,6 +21,14 @@ exclude:
   - terrys-issue-archive
 #Others
 markdown: kramdown
-theme: jekyll-theme-cayman
+remote_theme: wowthemesnet/mundana-theme-jekyll
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "Lori Olson"
 
 github: [metadata]
