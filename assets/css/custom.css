@@ -1,0 +1,8 @@
+figcaption {
+  font-size: small;
+}
+
+.topfirstimage {
+  max-inline-size: 100%;
+  block-size: auto;
+}

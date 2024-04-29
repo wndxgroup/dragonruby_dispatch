@@ -7,28 +7,54 @@ paginate:     10
 locale:       "en"
 google_analytics: UA-37342921-5
 
+include: ["_pages"]
+
+authors:
+  lori:
+    name:           Lori M Olson
+    site:           https://wndx.com
+    avatar:         assets/images/1avatar.jpg
+    bio:            "Hi, I am Lori, curator of DragonRuby Dispatch"
+    email:          lori@wndx.com
+    follow:         https://wndx.com/start-here
+  terry:
+    name:           Terence Gannon
+    site:           https://intellog.com
+    avatar:         assets/images/terry-social.jpg
+    bio:            "Our intrepid editor"
+    email:          terryg@intellog.com
+    follow:         https://intellog.com/project/bluruby/?utm_source=dragonrubydispatch.com
+
 # About/contact
-author:
-  name: Lori M Olson
-  url: https://wndx.school
+author: lori
 
 # Plugins
 plugins:
+#  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
 
-exclude:
-  - terrys-issue-archive
+# Paginate
+paginate: 10
+
 #Others
 markdown: kramdown
+highlighter: rouge
 remote_theme: wowthemesnet/mundana-theme-jekyll
 
+exclude:
+  - terrys-issue-archive
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
+  - scope:
+      path: "_pages"
     values:
-      author: "Lori Olson"
+      layout: "page"
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: lori
 
 github: [metadata]
