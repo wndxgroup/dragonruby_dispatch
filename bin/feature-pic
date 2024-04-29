@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'redcarpet'
+require 'front_matter_parser'
+require 'reverse_markdown'
+require 'nokogiri'
+require 'uri'
+
+# Variable containing markdown file path
+markdown_file_path = File.expand_path('../_posts/2024-02-28-Issue-150.md', __dir__)
+
+# Read the Markdown file
+markdown_content = File.read(markdown_file_path)
+
+# Create a new Redcarpet renderer
+markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+
+# Render our Markdown to HTML
+rendered_html = markdown.render(markdown_content)
+
+# Parse the HTML with Nokogiri
+html_doc = Nokogiri::HTML.fragment(rendered_html)
+
+# Extract first image src using CSS selector
+first_img_node = html_doc.css('img').first if html_doc.css('img').length > 0
+first_img_src = first_img_node['src'] if first_img_node
+
+# Remove the img tag from the HTML
+first_img_node.remove if first_img_node
+
+# Create your front matter
+front_matter = {
+}
+
+# Add found image src to front matter
+if first_img_src
+  first_img_uri = URI.parse(first_img_src)
+  front_matter['image'] = first_img_uri.path[1..]
+end
+
+puts front_matter
+
+# Create a Pandoc style YAML block for the front matter
+yaml_front_matter = front_matter.map { |k, v| "#{k}: #{v.nil? ? 'null' : v}" }.join("\n")
+
+# Convert HTML without the img tag back to markdown
+markdown_without_img = ReverseMarkdown.convert html_doc.to_s
+
+# Write the YAML front matter, followed by '---' separator and the modified markdown content, back to the file
+#File.write(markdown_file_path, "---\n#{yaml_front_matter}\n---\n#{markdown_without_img}")
