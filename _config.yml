@@ -3,7 +3,6 @@ title:        DragonRuby Dispatch
 description:  Tales from the Dragon
 baseurl:      ""
 url: "https://dragonrubydispatch.com"
-paginate:     10
 locale:       "en"
 google_analytics: UA-37342921-5
 
@@ -30,7 +29,7 @@ author: lori
 
 # Plugins
 plugins:
-#  - jekyll-feed
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
