@@ -6,3 +6,12 @@ figcaption {
   max-inline-size: 100%;
   block-size: auto;
 }
+
+ol.list-sponsors {
+  list-style:none;
+  padding-left:0;
+}
+ol.list-sponsor li {
+  display:flex;
+  font-size:0.8rem;
+}
