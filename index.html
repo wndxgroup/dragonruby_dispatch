@@ -32,21 +32,14 @@ description: "Get the World's Best DragonRuby News Here!"
           <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>
       </a>
       <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-        <h2 class="h4 font-weight-bold">
+        <h2>
           <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
         </h2>
         <p class="excerpt">
           {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
         </p>
         <div>
-          <small class="d-block text-muted">
-            In <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                {% endfor %}
-                </span>
-          </small>
-          <small class="text-muted">
+          <small class="text-muted d-block">
             {{ latest_post.date | date: '%b %d, %Y' }}
           </small>
         </div>
@@ -67,15 +60,11 @@ description: "Get the World's Best DragonRuby News Here!"
       </div>
       {% endif %}
       <div>
-        <h2 class="mb-2 h6 font-weight-bold">
+        <h5>
           <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
-        </h2>
-        <small class="d-block text-muted">
-          In <span class="catlist">
-                        {% for category in second_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+        </h5>
+        <small class="excerpt d-block text-muted">
+          {{ second_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
         </small>
         <small class="text-muted">
           {{ second_post.date | date: '%b %d, %Y' }}
@@ -94,15 +83,11 @@ description: "Get the World's Best DragonRuby News Here!"
       </div>
       {% endif %}
       <div>
-        <h2 class="mb-2 h6 font-weight-bold">
+        <h5>
           <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
-        </h2>
-        <small class="d-block text-muted">
-          In <span class="catlist">
-                        {% for category in third_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+        </h5>
+        <small class="excerpt d-block text-muted">
+          {{ third_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
         </small>
         <small class="text-muted">
           {{ third_post.date | date: '%b %d, %Y' }}
@@ -121,15 +106,11 @@ description: "Get the World's Best DragonRuby News Here!"
       </div>
       {% endif %}
       <div>
-        <h2 class="mb-2 h6 font-weight-bold">
+        <h5>
           <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
-        </h2>
-        <small class="d-block text-muted">
-          In <span class="catlist">
-                        {% for category in fourth_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+        </h5>
+        <small class="excerpt d-block text-muted">
+          {{ fourth_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
         </small>
         <small class="text-muted">
           {{ fourth_post.date | date: '%b %d, %Y' }}
@@ -144,7 +125,7 @@ description: "Get the World's Best DragonRuby News Here!"
 
   <div class="row mt-3">
     <div class="col-md-8 main-loop">
-      <h4 class="font-weight-bold spanborder"><span>All Newsletters</span></h4>
+      <h3 class="spanborder"><span>All Newsletters</span></h3>
       {% for post in paginator.posts %}
       {% include main-loop-card.html %}
       {% endfor %}

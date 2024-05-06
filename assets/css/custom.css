@@ -1,6 +1,120 @@
+/* Brand Fonts */
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-light-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-regular-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-semi-bold-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-semi-bold-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-bold-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-thin-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-light-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-regular-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Site Fonts */
+
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusr.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusro.ttf);
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusb.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusbo.ttf);
+  font-weight: bold;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttl.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttlo.ttf);
+  font-weight: 200;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttb.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
 /*
  * Overrides for Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
  */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #2d5a7a;
+  font-family: 'vvds_halau_serif', Verdana, Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+}
 
 a {
   color:#f76201;
@@ -58,6 +172,11 @@ a.text-dark:hover {
 .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(188, 103, 61, 0.5); }
 
+.navbar {
+  font-family: vvds_halau_serif;
+  font-weight: lighter;
+}
+
 .navbar .highlight .nav-link {
   color:#f76201 !important;
   border:1px solid #f76201;
@@ -69,7 +188,7 @@ a.text-dark:hover {
 .navbar-brand {
   margin-right:2rem;
   font-size:1.55rem;
-  font-family:"Georgia","Times New Roman",serif;
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
 }
 .dropdown-item {
   font-weight:400;
@@ -115,13 +234,14 @@ a.text-dark:hover {
   color:rgba(0,0,0,0.9);
 }
 .bd-search .form-control {
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
   font-size:.85rem;
   color:#999;
   border:1px solid #eee;
 }
 @media (min-width:992px) {
   .jumbotron-home h1 {
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.1;
@@ -253,7 +373,7 @@ a.text-dark:hover {
   color: rgba(0,0,0,0.59);
 }
 .article-headline {
-  font-family: Georgia,Times,"Times New Roman",serif;
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.15;
@@ -261,7 +381,7 @@ a.text-dark:hover {
 }
 article blockquote:before {
   content:"“";
-  font-family:Georgia;
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
   font-size:8rem;
 }
 article:first-letter {
@@ -290,11 +410,16 @@ article:first-letter {
 }
 
 code {
+  font-family: 'computer-modern-typewriter', Courier, sans-serif;
   color: #f76201;
 }
 
 figcaption {
   font-size: small;
+}
+
+.text-dark {
+  color: #2d5a7a !important;
 }
 
 .topfirstimage {
