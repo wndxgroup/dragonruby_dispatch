@@ -1,8 +1,448 @@
+/* Brand Fonts */
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-light-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-regular-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-semi-bold-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-semi-bold-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'saveur-sans';
+  src: url('https://wndx.com/css/fonts/saveursans-bold-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/saveursans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-thin-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-light-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vvds_halau_serif';
+  src: url('https://wndx.com/css/fonts/vvds_halau_serif-regular-webfont.woff2') format('woff2'),
+  url('https://wndx.com/css/fonts/vvds_halau_serif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Site Fonts */
+
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusr.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusro.ttf);
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusb.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern;
+  src: url(/assets/fonts/computer-modern/cmusbo.ttf);
+  font-weight: bold;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttl.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttlo.ttf);
+  font-weight: 200;
+  font-style: oblique;
+}
+@font-face {
+  font-family: computer-modern-typewriter;
+  src: url(/assets/fonts/computer-modern/cmuttb.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*
+ * Overrides for Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
+ */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #2d5a7a;
+  font-family: 'vvds_halau_serif', Verdana, Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  color:#f76201;
+}
+a.text-dark:hover {
+  color:#f76201 !important;
+}
+.btn-link.btn-primary {
+  color:#f76201;
+}
+.btn-link.btn-secondary {
+  color:#7832e2;
+}
+.btn-link.btn-success {
+  color:#f76201;
+}
+.btn-link.btn-info {
+  color:#febfa2;
+}
+.btn-link.btn-warning {
+  color:#ffde03;
+}
+.btn-link.btn-danger {
+  color:#ea2f65;
+}
+.btn-link.btn-light {
+  color:#f8f9fa;
+}
+.btn-link.btn-dark {
+  color:#212529;
+}
+.btn-white {
+  background-color:#fff;
+}
+.btn-outline-success {
+  color: #f76201;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f76201; }
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #f76201;
+  border-color: #f76201; }
+.btn-outline-success:focus, .btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(188, 103, 61, 0.5); }
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+  color: #f76201;
+  background-color: transparent; }
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #f76201;
+  border-color: #f76201; }
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(188, 103, 61, 0.5); }
+
+.navbar {
+  font-family: vvds_halau_serif;
+  font-weight: lighter;
+}
+
+.navbar .highlight .nav-link {
+  color:#f76201 !important;
+  border:1px solid #f76201;
+  font-size:1.15rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:rgba(0,0,0,0.5);
+  font-size:1.15rem;
+}
+
+.navbar .highlight .nav-link:hover {
+  background:#f76201;
+  color:#fff !important;
+}
+.navbar-brand {
+  margin-right:0px;
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+}
+.dropdown-item {
+  font-weight:400;
+}
+@media (min-width:768px) {
+  .dropdown-menu:before {
+    border-top:16px solid #fff;
+    border-left:16px solid #fff;
+  }
+}
+.navbar-light .navbar-brand {
+  color:rgba(0,0,0,0.9);
+}
+.navbar-light .navbar-brand:hover,.navbar-light .navbar-brand:focus {
+  color:rgba(0,0,0,0.9);
+}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus {
+  color:rgba(0,0,0,0.7);
+}
+.navbar-light .navbar-nav .nav-link.disabled {
+  color:rgba(0,0,0,0.3);
+}
+.navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .nav-link.active {
+  color:rgba(0,0,0,0.9);
+}
+.navbar-light .navbar-toggler {
+  color:rgba(0,0,0,0.5);
+  border-color:rgba(0,0,0,0.1);
+}
+.navbar-light .navbar-toggler-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-text {
+  color:rgba(0,0,0,0.5);
+}
+.navbar-light .navbar-text a {
+  color:rgba(0,0,0,0.9);
+}
+.navbar-light .navbar-text a:hover,.navbar-light .navbar-text a:focus {
+  color:rgba(0,0,0,0.9);
+}
+.bd-search .form-control {
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+  font-size:.85rem;
+  color:#999;
+  border:1px solid #eee;
+}
+@media (min-width:992px) {
+  .jumbotron-home h1 {
+    font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+  }
+}
+.bg-black {
+  background-color:#000;
+}
+.bg-primary {
+  fill:#f76201 !important;
+}
+.bg-secondary {
+  fill:#7832e2 !important;
+}
+.bg-success {
+  fill:#f76201 !important;
+}
+.bg-info {
+  fill:#febfa2 !important;
+}
+.bg-warning {
+  fill:#ffde03 !important;
+}
+.bg-danger {
+  fill:#ea2f65 !important;
+}
+.bg-light {
+  fill:#f8f9fa !important;
+}
+.bg-dark {
+  fill:#212529 !important;
+}
+.card .date {
+  background:#ea2f65;
+  color:#FFFFFF;
+}
+.card a:hover {
+  color:#f76201;
+}
+.alert-primary {
+  color:#fff;
+  background-color:#f76201;
+  border-color:#f76201;
+}
+.alert-primary hr {
+  border-top-color:#bc673d;
+}
+.alert-primary .alert-link {
+  color:#e6e6e6;
+}
+.alert-secondary {
+  color:#fff;
+  background-color:#7832e2;
+  border-color:#7832e2;
+}
+.alert-secondary hr {
+  border-top-color:#6a1fdb;
+}
+.alert-secondary .alert-link {
+  color:#e6e6e6;
+}
+.alert-success {
+  color:#fff;
+  background-color:#f76201;
+  border-color:#f76201;
+}
+.alert-success hr {
+  border-top-color:#bc673d;
+}
+.alert-success .alert-link {
+  color:#e6e6e6;
+}
+.alert-info {
+  color:#fff;
+  background-color:#febfa2;
+  border-color:#febfa2;
+}
+.alert-info hr {
+  border-top-color:#08d29d;
+}
+.alert-info .alert-link {
+  color:#e6e6e6;
+}
+.alert-warning {
+  color:#fff;
+  background-color:#ffde03;
+  border-color:#ffde03;
+}
+.alert-warning hr {
+  border-top-color:#e9ca00;
+}
+.alert-warning .alert-link {
+  color:#e6e6e6;
+}
+.alert-danger {
+  color:#fff;
+  background-color:#ea2f65;
+  border-color:#ea2f65;
+}
+.alert-danger hr {
+  border-top-color:#e81854;
+}
+.alert-danger .alert-link {
+  color:#e6e6e6;
+}
+.alert-light {
+  color:#fff;
+  background-color:#f8f9fa;
+  border-color:#f8f9fa;
+}
+.alert-light hr {
+  border-top-color:#e9ecef;
+}
+.alert-light .alert-link {
+  color:#e6e6e6;
+}
+.alert-dark {
+  color:#fff;
+  background-color:#212529;
+  border-color:#212529;
+}
+.alert-dark hr {
+  border-top-color:#16181b;
+}
+.alert-dark .alert-link {
+  color:#e6e6e6;
+}
+.excerpt {
+  color: rgba(0,0,0,0.59);
+}
+.article-headline {
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #222222;
+}
+article blockquote:before {
+  content:"“";
+  font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
+  font-size:8rem;
+}
+article:first-letter {
+  float:left;
+  font-size:5em;
+  line-height:1;
+  margin:0 .2em 0 0;
+  vertical-align:top;
+}
+.alertbar {
+  box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
+  background-color:#fff;
+}
+.spanborder {
+  border-bottom:1px solid #e8f3ec;
+}
+.spanborder span {
+  border-bottom:1px solid rgba(0,0,0,0.44);
+}
+
+@media (min-width:992px) {
+  .fixedsidebar {
+    border-right:1px solid #e9ecef;
+    background-color:#fff;
+  }
+}
+
+code {
+  font-family: 'computer-modern-typewriter', Courier, sans-serif;
+  color: #f76201;
+}
+
 figcaption {
   font-size: small;
+}
+
+.text-dark {
+  color: #2d5a7a !important;
+}
+
+.text-bright {
+  color: #f76201 !important;
 }
 
 .topfirstimage {
   max-inline-size: 100%;
   block-size: auto;
+}
+
+ol.list-sponsors {
+  list-style:none;
+  padding-left:0;
+}
+ol.list-sponsor li {
+  display:flex;
+  font-size:0.8rem;
 }

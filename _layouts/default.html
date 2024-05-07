@@ -14,6 +14,8 @@
     <script src="https://kit.fontawesome.com/79e602e837.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
@@ -22,7 +24,7 @@
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
 
-    <!-- Theme Stylesheet -->
+    <!-- My Customizations Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
@@ -36,12 +38,12 @@
 
 </head>
 
-<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+<body class="{% if page.url == '/' %} homefirstpage {% endif %}">
 
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><strong>{{site.name}}</strong></a>
+        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><img src="/assets/images/BrandedRuby.png" height="28px"></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
