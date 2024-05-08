@@ -379,12 +379,15 @@ a.text-dark:hover {
 .excerpt {
   color: rgba(0,0,0,0.59);
 }
-.article-headline {
+article {
   font-family: 'computer-modern', Georgia, Times, "Times New Roman", serif;
-  font-size: 3.2rem;
+}
+.article-headline {
+  font-family: 'vvds_halau_serif', "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.15;
-  color: #222222;
+  color: #2d5a7a;
 }
 article blockquote:before {
   content:"“";
@@ -392,12 +395,18 @@ article blockquote:before {
   font-size:8rem;
 }
 article:first-letter {
-  float:left;
-  font-size:5em;
-  line-height:1;
-  margin:0 .2em 0 0;
-  vertical-align:top;
+  float: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
+  vertical-align:inherit;
 }
+
+article > h2 {
+  font-size: larger;
+  font-weight: 400;
+}
+
 .alertbar {
   box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
   background-color:#fff;
@@ -445,4 +454,9 @@ ol.list-sponsors {
 ol.list-sponsor li {
   display:flex;
   font-size:0.8rem;
+}
+
+.page-link {
+  line-height: 1.25;
+  color: #f76201;
 }
